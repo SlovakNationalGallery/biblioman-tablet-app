@@ -3,8 +3,9 @@
     <div class="w-full h-[80px] flex items-center justify-between p-6 text-2xl">
       <div class="flex items-center gap-4">
         <button @click="router.back()"><ArrowUp class="w-8 h-8" /></button>
-        <span class="font-bold">Dušan Jurkovič</span>
+        <span class="font-bold">{{ trans(`library.${publication.id}.author`)}}</span>
         <span>{{ trans(`library.${publication.id}.title`) }}</span>
+        <span>({{ trans(`library.${publication.id}.year`) }})</span>
       </div>
       <LanguageSwitcher />
     </div>
@@ -125,14 +126,12 @@ const handleTouchEnd = (event: TouchEvent, index: number) => {
 
 onMounted(() => {
   let pageImages: Array<ImageData> = [];
-  for (let i = 1; i < Number(publication.pages); i++) {
+  for (let i = 0; i < Number(publication.pages); i++) {
     pageImages.push({
       initialDistance: 0,
       initialTouchCenterX: 0,
       initialTouchCenterY: 0,
-      src: `library/${publication.id}/${publication.id}-${String(
-        i + 1
-      ).padStart(2, "0")}.jpg`,
+      src: `library/${publication.id}/${publication.id}-${i + 1}.jpg`,
       wrapperRef: ref(null),
     });
   }
