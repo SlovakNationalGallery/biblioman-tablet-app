@@ -66,9 +66,9 @@
       </div>
     </div>
     <div
-      class="w-full h-[72px] flex items-center justify-between p-6 text-neutral-900"
+      class="w-full flex items-center justify-between p-6 text-neutral-900"
     >
-      <div class="flex items-center">
+      <div class="flex flex-row leading-none items-center h-full">
         <Logo class="h-6 w-6" />
         <span class="ml-4 text-xl">{{ trans("sng") }}</span>
       </div>
@@ -76,6 +76,7 @@
         <Close class="w-8 h-8" v-if="isPopoverOpen" />
         <Info class="w-8 h-8" v-else />
       </button>
+      <!-- <div class="h-screen w-screen fixed top-0 left-0" @click="isPopoverOpen = false"></div> -->
       <dialog
         :open="isPopoverOpen"
         class="absolute rounded-xl bottom-16 border-2 border-black ml-auto mr-6 p-6 w-96"

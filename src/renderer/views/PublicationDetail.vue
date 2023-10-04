@@ -18,14 +18,16 @@
           v-for="(image, index) in images"
           :key="index"
         >
-          <img
-            class="w-full"
-            :src="image.src"
-            :ref="(el) => (image.wrapperRef = el)"
-            @touchstart="(event) => handleTouchStart(event, index)"
-            @touchmove="(event) => handleTouchMove(event, index)"
-            @touchend="(event) => handleTouchEnd(event, index)"
-          />
+          <div>
+            <img
+              class="w-full"
+              :src="image.src"
+              :ref="(el) => (image.wrapperRef = el)"
+              @touchstart="(event) => handleTouchStart(event, index)"
+              @touchmove="(event) => handleTouchMove(event, index)"
+              @touchend="(event) => handleTouchEnd(event, index)"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -78,7 +80,6 @@ const handleTouchStart = (event: TouchEvent, index: number) => {
     );
     image.initialTouchCenterX = (touch2.clientX + touch1.clientX) / 2;
     image.initialTouchCenterY = (touch2.clientY + touch1.clientY) / 2;
-
   }
 };
 
@@ -106,8 +107,8 @@ const handleTouchMove = (event: TouchEvent, index: number) => {
     scale = Math.min(maxScale, Math.max(minScale, scale + delta * 0.01));
 
     //inverse movement
-    const x = (2 * image.initialTouchCenterX - touchCenterX) - frameRect.left;
-    const y = (2 * image.initialTouchCenterY - touchCenterY) - frameRect.top;
+    const x = 2 * image.initialTouchCenterX - touchCenterX - frameRect.left;
+    const y = 2 * image.initialTouchCenterY - touchCenterY - frameRect.top;
 
     wrapperRef.style.transform = `scale(${scale})`;
     wrapperRef.style.transformOrigin = `${x}px ${y}px`;
