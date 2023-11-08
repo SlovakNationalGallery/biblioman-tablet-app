@@ -60,7 +60,7 @@ export const TRANSLATIONS = {
             "Pavel Dobšinský: Prostonárodné slovenské povesti (Slovak Tales), notebook 9. Turčiansky sv. Martin : Kníhtlačiarsky účastinársky spolok, 1922. Second edition. Illustrations  Mikuláš Galanda. SNG, UP-P 3280/30b",
             "Ivan Horváth: Strieborný prach (Silver Dust). Bratislava : Slovenská grafia, 1929. Typography Karel Jaroň. SNG, UP-P 3280/41",
             "Jaroslav Seifert: Na vlnách TSF (On the Waves of TSF). Prague : Václav Petr, 1925. Hosta Edition, Volume 1. Cover and typography Karel Teige. SNG, UP-P 3280/3649",
-            "Štefan Janšák: Lovci hlinených perál (The Hunters of Clay Pearls). Bibliophile edition. 1934. Print: Linografia K. Jaroň a spol., Bratislava. Illustrations: Mikuláš Galanda. Graphic design: Karol Jaroň, UP-P 3280/"
+            "Štefan Janšák: Lovci hlinených perál (The Hunters of Clay Pearls). Bibliophile edition. 1934. Print: Linografia K. Jaroň a spol., Bratislava. Illustrations: Mikuláš Galanda. Graphic design: Karol Jaroň, UP-P 3280/809"
         ],
         description: [
             "The exposition Biblioman brings you the joy that stems from the reading experience and visual perception of bibliophile books also through digitized works from Igor Gazdík's collection.",
