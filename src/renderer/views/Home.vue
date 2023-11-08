@@ -39,8 +39,9 @@
                   <img
                     :class="[
                       `${
-                        index === activeBookIndex ?
-                        'animate-slideshow' + (pageIndex + 2) : 'hidden'
+                        index === activeBookIndex
+                          ? 'animate-slideshow' + (pageIndex + 2)
+                          : 'hidden'
                       }`,
                       'w-full h-full absolute inset-0 object-cover rounded-xl',
                     ]"
@@ -65,9 +66,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="w-full flex items-center justify-between p-6 text-neutral-900"
-    >
+    <div class="w-full flex items-center justify-between p-6 text-neutral-900">
       <div class="flex flex-row leading-none items-center h-full">
         <Logo class="h-6 w-6" />
         <span class="ml-4 text-xl">{{ trans("sng") }}</span>
@@ -79,14 +78,22 @@
       <!-- <div class="h-screen w-screen fixed top-0 left-0" @click="isPopoverOpen = false"></div> -->
       <dialog
         :open="isPopoverOpen"
-        class="absolute rounded-xl bottom-16 border-2 border-black ml-auto mr-6 p-6 w-96"
+        class="absolute rounded-xl bottom-16 border-2 border-black ml-auto mr-6 p-6 w-1/2"
       >
         <article class="flex flex-col">
           <p
-            v-for="description in trans('igorGazdikCollectionDescription')"
-            class="pt-2 text-lg leading-6"
+            v-for="description in trans('description')"
+            class="pt-2 text-lg leading-6 whitespace-pre-wrap"
           >
             {{ description }}
+          </p>
+        </article>
+        <article class="flex flex-col pt-4">
+          <p
+            v-for="annotation in trans('annotation')"
+            class="pt-2 text-lg leading-6 whitespace-pre-wrap"
+          >
+            {{ annotation }}
           </p>
         </article>
       </dialog>

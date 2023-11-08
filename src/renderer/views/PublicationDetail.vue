@@ -3,7 +3,9 @@
     <div class="w-full h-[80px] flex items-center justify-between p-6 text-2xl">
       <div class="flex items-center gap-4">
         <button @click="router.back()"><ArrowUp class="w-8 h-8" /></button>
-        <span class="font-bold">{{ trans(`library.${publication.id}.author`)}}</span>
+        <span class="font-bold">{{
+          trans(`library.${publication.id}.author`)
+        }}</span>
         <span>{{ trans(`library.${publication.id}.title`) }}</span>
         <span>({{ trans(`library.${publication.id}.year`) }})</span>
       </div>
