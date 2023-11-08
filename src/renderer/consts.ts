@@ -14,11 +14,12 @@ export const TRANSLATIONS = {
             "Pavel Dobšinský: Prostonárodné slovenské povesti, sošit 1. Turčiansky sv. Martin : Kníhtlačiarsky účastinársky spolok, 1922. Tretie vydanie. Ilustrácie Andrej Mihal. SNG, UP-P 3280/30a",
             "Pavel Dobšinský: Prostonárodné slovenské povesti, sošit 9. Turčiansky sv. Martin : Kníhtlačiarsky účastinársky spolok, 1922. Ilustrácie  Mikuláš Galanda. SNG, UP-P 3280/30b",
             "Ivan Horváth: Strieborný prach. Bratislava : Slovenská grafia, 1929. Typografia Karel Jaroň. SNG, UP-P 3280/41",
-            "Jaroslav Seifert: Na vlnách TSF.  Praha : Václav Petr, 1925. Edícia Hosta, zväzok 1. Obálka a typografia Karel Teige. SNG, UP-P 3280/3649"],
+            "Jaroslav Seifert: Na vlnách TSF.  Praha : Václav Petr, 1925. Edícia Hosta, zväzok 1. Obálka a typografia Karel Teige. SNG, UP-P 3280/3649",
+            "Štefan Janšák: Lovci hlinených perál. 1. zväzok bibliofilskej edície Slovenské ráno. 1934. Tlač: Linografia K. Jaroň a spol, Bratislava. Ilustrácie: Mikuláš Galanda. Grafická úprava: Karol Jaroň, UP-P 3280/809"],
         description: [
             "Zážitok z čítania a vizuálne potešenie z krásnych kníh v expozícii Biblioman prinášame aj prostredníctvom digitalizovaných diel zo zbierky Igora Gazdíka.",
             "Prvý diel výberu digitalizovaných titulov je zameraný na slovenské a české knihy. Predstavuje typografické a ilustrátorské realizácie začiatkov knižného dizajnu a bibliofílie na Slovensku v podaní viacerých ich protagonistov – Ľudovíta Fullu, Mikuláša Galandu, Karola Jaroňa.",
-            "Návštevníci sa v tejto sérii digitalizovaných kníh môžu začítať do slovenskej klasiky – Rozprávok Pavla Dobšinského a novely Ivana Horvátha. Českú bibliofíliu reprezentuje legendárna poetistická zbierka Jaroslava Seiferta v kongeniálnej grafickej/ typografickej úprave Karola Teigeho."
+            "Návštevníci sa v tejto sérii digitalizovaných kníh môžu začítať do slovenskej klasiky – Rozprávok Pavla Dobšinského, novely Ivana Horvátha alebo esejí Štefana Janšáka zo začiatkov slovenskej archeológie. Českú bibliofíliu reprezentuje legendárna poetistická zbierka Jaroslava Seiferta v kongeniálnej grafickej/ typografickej úprave Karola Teigeho."
         ],
         library: {
             "1": {
@@ -43,6 +44,12 @@ export const TRANSLATIONS = {
                 author: "Pavel Dobšinský",
                 year: '1922'
             },
+            "5": {
+                title: "Lovci hlinených perál",
+                author: "Štefan Janšák",
+                subhead: "zväzok 1",
+                year: "1934"
+            }
         }
     },
     en: {
@@ -52,12 +59,13 @@ export const TRANSLATIONS = {
             "Pavel Dobšinský: Prostonárodné slovenské povesti (Slovak Tales), notebook 1. Turčiansky sv. Martin : Kníhtlačiarsky účastinársky spolok, 1922. Third edition. Illustrations Andrej Mihal. SNG, UP-P 3280/30a",
             "Pavel Dobšinský: Prostonárodné slovenské povesti (Slovak Tales), notebook 9. Turčiansky sv. Martin : Kníhtlačiarsky účastinársky spolok, 1922. Second edition. Illustrations  Mikuláš Galanda. SNG, UP-P 3280/30b",
             "Ivan Horváth: Strieborný prach (Silver Dust). Bratislava : Slovenská grafia, 1929. Typography Karel Jaroň. SNG, UP-P 3280/41",
-            "Jaroslav Seifert: Na vlnách TSF (On the Waves of TSF). Prague : Václav Petr, 1925. Hosta Edition, Volume 1. Cover and typography Karel Teige. SNG, UP-P 3280/3649"
+            "Jaroslav Seifert: Na vlnách TSF (On the Waves of TSF). Prague : Václav Petr, 1925. Hosta Edition, Volume 1. Cover and typography Karel Teige. SNG, UP-P 3280/3649",
+            "Štefan Janšák: Lovci hlinených perál (The Hunters of Clay Pearls). Bibliophile edition. 1934. Print: Linografia K. Jaroň a spol., Bratislava. Illustrations: Mikuláš Galanda. Graphic design: Karol Jaroň, UP-P 3280/"
         ],
         description: [
-            "The exposition Biblioman brings you the joy that stems from the reading experience and visual perception of beautiful books also through digitized works from Igor Gazdík's collection.",
+            "The exposition Biblioman brings you the joy that stems from the reading experience and visual perception of bibliophile books also through digitized works from Igor Gazdík's collection.",
             "The first volume of the selected digitized titles focuses on Slovak and Czech books. It showcases typographic and illustrative creations from the beginning of book design and bibliophilia in Slovakia, featuring its several protagonists, such as Ľudovít Fulla, Mikuláš Galanda, and Karol Jaroň.",
-            "In this series of digitized books, visitors can dive into Slovak classics like the Fairy Tales by Pavel Dobšinský or Ivan Horváth's novella. Czech bibliophilia is represented by the legendary collection of poems by Jaroslav Seifert in the equally masterful graphic/typographic design by Karol Teige."
+            "In this series of digitized books, visitors can dive into Slovak classics like the Fairy Tales by Pavel Dobšinský, Ivan Horváth's novella or essays by Štefan Janšák from the beginnings of Slovak archaeology. Czech bibliophilia is represented by the legendary collection of poems by Jaroslav Seifert in the equally masterful graphic/typographic design by Karol Teige."
         ],
         library: {
             "1": {
@@ -82,6 +90,12 @@ export const TRANSLATIONS = {
                 author: "Pavel Dobšinský",
                 year: '1922'
             },
+            "5": {
+                title: "The Hunters of Clay Pearls",
+                author: "Štefan Janšák",
+                subhead: "volume 1",
+                year: "1934"
+            }
         }
     }
 }
@@ -107,4 +121,9 @@ export const LIBRARY: Array<Publication> = [
         pages: 21,
         featuredPages: [2, 18, 12]
     },
+    {
+        id: "5",
+        pages: 58,
+        featuredPages: [4, 6, 32]
+    }
 ]

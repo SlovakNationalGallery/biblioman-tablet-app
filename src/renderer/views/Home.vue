@@ -66,9 +66,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="w-full flex items-center justify-between p-6 text-neutral-900"
-    >
+    <div class="w-full flex items-center justify-between p-6 text-neutral-900">
       <div class="flex flex-row leading-none items-center h-full">
         <Logo class="h-6 w-6" />
         <span class="ml-4 text-xl">{{ trans("sng") }}</span>
